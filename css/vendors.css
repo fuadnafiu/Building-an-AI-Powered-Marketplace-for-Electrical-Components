@@ -1,0 +1,606 @@
+/* ============================================
+   VENDORS PAGE STYLES
+   ============================================ */
+
+.vendor-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: var(--white);
+    padding: 100px 0;
+    position: relative;
+}
+
+.vendor-hero .container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.vendor-hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.trust-badges {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.badge-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+}
+
+.badge-item i {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+/* Hero Stats Box */
+.hero-stats-box {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero-stats-box h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stat-item:last-child {
+    border-bottom: none;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--accent-color);
+    margin-bottom: 0.25rem;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Benefits Section */
+.benefits-section {
+    padding: 80px 0;
+    background: var(--light-bg);
+}
+
+.benefits-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--text-dark);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.benefit-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.benefit-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.benefit-icon i {
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.benefit-card h3 {
+    font-size: 1.4rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.benefit-card p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Vendor How It Works */
+.vendor-how-it-works {
+    padding: 80px 0;
+    background: var(--white);
+}
+
+.vendor-how-it-works h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    color: var(--text-dark);
+}
+
+.steps-container {
+    display: grid;
+    gap: 2rem;
+}
+
+.vendor-step {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 2rem;
+    background: var(--light-bg);
+    padding: 2.5rem;
+    border-radius: 12px;
+    align-items: start;
+}
+
+.step-number {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.step-content h3 {
+    font-size: 1.8rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.step-content p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.step-checklist {
+    list-style: none;
+    display: grid;
+    gap: 0.75rem;
+}
+
+.step-checklist li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--text-dark);
+}
+
+.step-checklist i {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+}
+
+/* Success Stories */
+.success-stories {
+    padding: 80px 0;
+    background: var(--light-bg);
+}
+
+.success-stories h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--text-dark);
+}
+
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.story-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: var(--shadow);
+    transition: all 0.3s;
+}
+
+.story-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.story-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.story-header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.story-header h4 {
+    color: var(--text-dark);
+    font-size: 1.2rem;
+}
+
+.story-header p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.story-quote {
+    font-style: italic;
+    color: var(--text-dark);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    border-left: 4px solid var(--primary-color);
+}
+
+.story-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid var(--border-color);
+}
+
+.metric {
+    text-align: center;
+}
+
+.metric strong {
+    display: block;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 0.25rem;
+}
+
+.metric span {
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+
+/* Vendor Pricing */
+.vendor-pricing {
+    padding: 80px 0;
+    background: var(--white);
+}
+
+.vendor-pricing h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.pricing-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 3rem;
+}
+
+.vendor-pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto 3rem;
+}
+
+.vendor-plan {
+    background: var(--light-bg);
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: var(--shadow);
+    transition: all 0.3s;
+    position: relative;
+}
+
+.vendor-plan:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.vendor-plan.featured {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: var(--white);
+    border: 3px solid var(--secondary-color);
+}
+
+.plan-badge {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background: var(--accent-color);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.vendor-plan h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.vendor-plan.featured h3 {
+    color: var(--white);
+}
+
+.plan-description {
+    margin-bottom: 2rem;
+    opacity: 0.8;
+}
+
+.plan-fee {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.vendor-plan.featured .plan-fee {
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--white);
+}
+
+.fee-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.vendor-plan.featured .fee-item {
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+.fee-item:last-child {
+    border-bottom: none;
+}
+
+.fee-item strong {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.vendor-plan.featured .fee-item strong {
+    color: var(--accent-color);
+}
+
+.plan-features {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.plan-features li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 0;
+}
+
+.plan-features li i {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+}
+
+.vendor-plan.featured .plan-features li i {
+    color: var(--accent-color);
+}
+
+.vendor-plan button {
+    width: 100%;
+}
+
+.pricing-note {
+    background: rgba(37, 99, 235, 0.1);
+    border-left: 4px solid var(--primary-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.pricing-note i {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.pricing-note p {
+    color: var(--text-dark);
+    margin: 0;
+}
+
+/* Vendor Features */
+.vendor-features {
+    padding: 80px 0;
+    background: var(--light-bg);
+}
+
+.vendor-features h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    color: var(--text-dark);
+}
+
+.features-showcase {
+    display: grid;
+    gap: 4rem;
+}
+
+.feature-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.feature-item.reverse {
+    direction: rtl;
+}
+
+.feature-item.reverse > * {
+    direction: ltr;
+}
+
+.feature-visual {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    box-shadow: var(--shadow);
+}
+
+.feature-text h3 {
+    font-size: 2rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.feature-text p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Vendor CTA */
+.vendor-cta {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: var(--white);
+    text-align: center;
+}
+
+.vendor-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.vendor-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.cta-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.cta-subtext {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .vendor-hero .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .vendor-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-cta {
+        justify-content: center;
+    }
+
+    .trust-badges {
+        justify-content: center;
+    }
+
+    .vendor-step {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .step-number {
+        margin: 0 auto 1rem;
+    }
+
+    .feature-item,
+    .feature-item.reverse {
+        grid-template-columns: 1fr;
+        direction: ltr;
+    }
+
+    .stories-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .vendor-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .story-metrics {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,80 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.log
+
+# OS
+.DS_Store
+.vscode/
+
+# Environment
+.env
+
+# Database (will be created on deployment)
+marketplace.db
+
+# Datasets - exclude training data, keep only component images
+dataset/SIP-17/
+dataset/New folder/
+archive.zip
+
+# Logs
+logs/
+
+# Backup/Old files
+*_old*
+*_backup*
+api_server_old_industrial.py
+api_server_trained.py
+api_server_trained_fixed.py
+api_with_yolo.py
+backend/
+
+# Training files (not needed for deployment)
+train_model.py
+train_electronics.py
+evaluate_model.py
+quick_test.py
+download_dataset.py
+test_system.py
+
+# YOLO models
+*.pt
+
+# Documentation (keep README, exclude others)
+DATASET_INTEGRATION.md
+PROBLEM_ANALYSIS_AND_FIX.md
+QUICKSTART.md
+
+# Batch files
+*.bat
+
+# Exclude dataset (not needed after training)
+dataset/
+
+# Exclude training scripts
+train_*.py
+evaluate_model.py
+download_dataset.py
+
+# Exclude old files
+api_server_old*.py
+api_server_trained*.py
+api_with_yolo.py
+archive.zip
+yolo11n.pt
+logs/
+backend/
+marketplace.db

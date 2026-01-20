@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing & Plans - current nai</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pricing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-microchip"></i>
+                <span>current nai</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#how-it-works">How It Works</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+                <li><a href="vendors.html">For Vendors</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="#" class="btn-primary">Sign In</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Pricing Header -->
+    <section class="pricing-header">
+        <div class="container">
+            <h1>Simple, Transparent Pricing</h1>
+            <p>Choose the plan that fits your needs. All plans include AI component identification.</p>
+            <div class="billing-toggle">
+                <span class="billing-label">Monthly</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="billingToggle">
+                    <span class="toggle-slider"></span>
+                </label>
+                <span class="billing-label">Annual <span class="save-badge">Save 20%</span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="pricing-grid">
+                <!-- Free Plan -->
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3>Free</h3>
+                        <p>Perfect for occasional searches</p>
+                    </div>
+                    <div class="plan-price">
+                        <span class="price">$0</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> 3 AI identifications per month</li>
+                        <li><i class="fas fa-check"></i> Basic marketplace access</li>
+                        <li><i class="fas fa-check"></i> Price comparisons</li>
+                        <li><i class="fas fa-check"></i> Email support</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Price history data</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Price alerts</li>
+                        <li class="disabled"><i class="fas fa-times"></i> 3D print library</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Priority sourcing</li>
+                    </ul>
+                    <button class="btn-secondary plan-btn">Get Started</button>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="plan-header">
+                        <h3>Pro</h3>
+                        <p>For professional buyers</p>
+                    </div>
+                    <div class="plan-price">
+                        <span class="price monthly-price">$49</span>
+                        <span class="price annual-price" style="display: none;">$39</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> <strong>Unlimited AI identifications</strong></li>
+                        <li><i class="fas fa-check"></i> Full marketplace access</li>
+                        <li><i class="fas fa-check"></i> <strong>12-month price history</strong></li>
+                        <li><i class="fas fa-check"></i> <strong>Unlimited price alerts</strong></li>
+                        <li><i class="fas fa-check"></i> <strong>3D print library access</strong></li>
+                        <li><i class="fas fa-check"></i> <strong>Predictive pricing insights</strong></li>
+                        <li><i class="fas fa-check"></i> Priority customer support</li>
+                        <li><i class="fas fa-check"></i> Advanced search filters</li>
+                    </ul>
+                    <button class="btn-primary plan-btn">Start Pro Trial</button>
+                    <p class="trial-note">14-day free trial • No credit card required</p>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3>Enterprise</h3>
+                        <p>For large organizations</p>
+                    </div>
+                    <div class="plan-price">
+                        <span class="price">Custom</span>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> Everything in Pro, plus:</li>
+                        <li><i class="fas fa-check"></i> <strong>Dedicated account manager</strong></li>
+                        <li><i class="fas fa-check"></i> <strong>Priority sourcing service</strong></li>
+                        <li><i class="fas fa-check"></i> <strong>API access</strong></li>
+                        <li><i class="fas fa-check"></i> <strong>Custom integrations</strong></li>
+                        <li><i class="fas fa-check"></i> <strong>Bulk pricing discounts</strong></li>
+                        <li><i class="fas fa-check"></i> <strong>Multi-user team access</strong></li>
+                        <li><i class="fas fa-check"></i> 24/7 priority support</li>
+                    </ul>
+                    <button class="btn-secondary plan-btn">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Predictive Pricing Feature -->
+    <section class="feature-spotlight">
+        <div class="container">
+            <div class="spotlight-content">
+                <div class="spotlight-text">
+                    <span class="spotlight-badge"><i class="fas fa-star"></i> Pro Feature</span>
+                    <h2>Predictive Pricing: Buy at the Right Time</h2>
+                    <p class="spotlight-description">Our AI analyzes historical pricing data to predict when parts will be cheaper. Never overpay again.</p>
+                    <div class="spotlight-features">
+                        <div class="spotlight-item">
+                            <i class="fas fa-chart-line"></i>
+                            <div>
+                                <h4>Historical Trends</h4>
+                                <p>See 12+ months of price history for any part</p>
+                            </div>
+                        </div>
+                        <div class="spotlight-item">
+                            <i class="fas fa-bell"></i>
+                            <div>
+                                <h4>Smart Alerts</h4>
+                                <p>Get notified when prices drop below your target</p>
+                            </div>
+                        </div>
+                        <div class="spotlight-item">
+                            <i class="fas fa-robot"></i>
+                            <div>
+                                <h4>AI Predictions</h4>
+                                <p>Know when to buy: "Usually 30% cheaper in March"</p>
+                            </div>
+                        </div>
+                        <div class="spotlight-item">
+                            <i class="fas fa-piggy-bank"></i>
+                            <div>
+                                <h4>Save Money</h4>
+                                <p>Pro users save an average of $2,400/year</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="spotlight-visual">
+                    <div class="price-chart-mockup">
+                        <div class="chart-header">
+                            <h4>Siemens 6ES7 315-2EH14-0AB0</h4>
+                            <span class="current-price">$1,245</span>
+                        </div>
+                        <div class="chart-area">
+                            <canvas id="priceChart"></canvas>
+                        </div>
+                        <div class="chart-insight">
+                            <i class="fas fa-lightbulb"></i>
+                            <strong>AI Insight:</strong> Historically 25% cheaper in Q1 (Feb-Mar). Consider waiting or set a price alert at $950.
+                        </div>
+                        <button class="btn-primary chart-action">Set Price Alert</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="comparison-section">
+        <div class="container">
+            <h2>Compare All Features</h2>
+            <div class="comparison-table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Features</th>
+                            <th>Free</th>
+                            <th class="featured-col">Pro</th>
+                            <th>Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>AI Part Identifications</td>
+                            <td>3/month</td>
+                            <td class="featured-col"><strong>Unlimited</strong></td>
+                            <td><strong>Unlimited</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Marketplace Access</td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td class="featured-col"><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Price Comparison</td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td class="featured-col"><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Price History Data</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td class="featured-col">12 months</td>
+                            <td>24+ months</td>
+                        </tr>
+                        <tr>
+                            <td>Price Alerts</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td class="featured-col">Unlimited</td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td>Predictive Pricing</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td class="featured-col"><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>3D Print Library</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td class="featured-col"><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Manual Library</td>
+                            <td>Limited</td>
+                            <td class="featured-col">Full Access</td>
+                            <td>Full Access</td>
+                        </tr>
+                        <tr>
+                            <td>Priority Sourcing</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td class="featured-col"><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>API Access</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td class="featured-col"><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Team Members</td>
+                            <td>1</td>
+                            <td class="featured-col">1</td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td>Support</td>
+                            <td>Email</td>
+                            <td class="featured-col">Priority</td>
+                            <td>24/7 Dedicated</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> How does predictive pricing work?</h3>
+                    <p>Our AI analyzes years of historical pricing data, seasonal trends, and market dynamics to predict future price movements. When you view a part, we'll tell you if it's currently a good time to buy or if waiting could save you money.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Can I cancel anytime?</h3>
+                    <p>Yes! All paid plans are month-to-month with no long-term commitments. You can cancel at any time and retain access until the end of your billing period.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> What payment methods do you accept?</h3>
+                    <p>We accept all major credit cards (Visa, Mastercard, Amex), PayPal, and ACH transfers for Enterprise customers.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Is there a free trial for Pro?</h3>
+                    <p>Yes! We offer a 14-day free trial of Pro with full access to all features. No credit card required to start.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> How accurate is the AI identification?</h3>
+                    <p>Our AI has a 94% accuracy rate on parts with visible markings or clear imagery. For unclear parts, we provide multiple potential matches with confidence scores.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Do vendors pay to list parts?</h3>
+                    <p>Yes, we charge vendors a small listing fee and transaction fee. This keeps the platform free for buyers while ensuring high-quality listings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Find Parts Faster?</h2>
+                <p>Join 10,000+ professionals who save time and money with current nai</p>
+                <div class="cta-buttons">
+                    <a href="identify.html" class="btn-large btn-white">
+                        <i class="fas fa-camera"></i> Start Free
+                    </a>
+                    <a href="#" class="btn-large btn-secondary">
+                        <i class="fas fa-play-circle"></i> Watch Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3><i class="fas fa-microchip"></i> current nai</h3>
+                    <p>The intelligent marketplace for obsolete and legacy machine parts.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="identify.html">Part Identification</a></li>
+                        <li><a href="marketplace.html">Marketplace</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 current nai. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/pricing.js"></script>
+</body>
+</html>
