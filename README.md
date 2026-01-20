@@ -1,338 +1,356 @@
-# LegacyParts AI - Aftermarket AI Spare Parts Hub
+# current nai - AI-Powered Electronic Component Identification & Marketplace
 
-A comprehensive web application for finding legacy and obsolete machine parts using AI-powered identification and predictive pricing.
+An intelligent web application that uses deep learning to identify electronic components from images and connects buyers with verified vendors in Bangladesh.
 
 ## 🎯 Project Overview
 
-LegacyParts AI is a specialized marketplace that solves the challenge of sourcing parts for legacy industrial equipment (10-20 years old). The platform uses artificial intelligence to identify parts from photos or manual scans and connects buyers with verified vendors while providing predictive pricing insights.
+**current nai** is an AI-powered platform designed for electronics enthusiasts, hobbyists, engineers, and professionals in Bangladesh. The platform uses a trained EfficientNet-B0 deep learning model to identify 36 different types of electronic components from uploaded images and provides a comprehensive marketplace to purchase these components from local verified vendors.
 
 ## ✨ Key Features
 
-### For Buyers
-- **AI Part Identification**: Upload photos of broken parts or scan old manuals - AI identifies the part instantly
-- **Predictive Pricing**: Historical price trends and smart alerts (e.g., "Usually 30% cheaper in March")
-- **3D Printable Alternatives**: Access to verified 3D-printable models for non-critical components
-- **Verified Vendors**: Curated marketplace with rated and reviewed sellers
-- **Price Alerts**: Set target prices and get notified when parts drop in price
+### 🤖 AI Component Identification
+- **Deep Learning Model**: EfficientNet-B0 trained on 10,990 images across 36 component categories
+- **52.18% Validation Accuracy**: Identifies components including capacitors, resistors, transistors, LEDs, ICs, relays, and more
+- **Instant Recognition**: Upload component images and get immediate identification results
+- **Confidence Scoring**: AI provides confidence percentages for each prediction
 
-### For Vendors
-- **Targeted Marketplace**: Direct access to buyers actively searching for legacy parts
-- **AI-Powered Matching**: Automatic matching with buyer searches
-- **Flexible Pricing**: Listing fees + transaction-based monetization
-- **Bulk Upload Tools**: Efficiently manage large inventories
-- **Real-Time Analytics**: Track views, conversions, and optimize listings
+### 🛒 Live Marketplace
+- **41 Real Products**: Database-driven marketplace with authentic electronic components
+- **Bangladesh-Focused**: Prices in Bangladesh Taka (৳), local vendors, verified manufacturers
+- **Advanced Search**: Real-time filtering by name, description, category, and manufacturer
+- **Category Filters**: Browse by component type (capacitors, transistors, ICs, LEDs, etc.)
+- **Vendor Ratings**: 5 verified vendors with customer ratings and reviews
 
-### Monetization Model
-- **Vendor Listing Fees**: $3-5 per part/month depending on plan
-- **Transaction Fees**: 6-8% per sale
-- **Pro Subscription**: $49/month for buyers (unlimited AI identifications, price history, alerts)
-- **Enterprise Plans**: Custom pricing for large organizations
+### 🎨 Modern Dark Theme
+- **Electrified Design**: Neon cyan, purple, and pink accents on dark backgrounds
+- **Microchip Icons**: Circuit-themed visual elements throughout
+- **Responsive Layout**: Fully optimized for desktop, tablet, and mobile devices
+- **Background Images**: Custom hero and marketplace backgrounds
+
+## 🧠 AI Model Details
+
+### Training Specifications
+- **Architecture**: EfficientNet-B0 (PyTorch)
+- **Dataset**: 10,990 electronic component images
+- **Categories**: 36 component types
+- **Training Duration**: ~3.5 hours
+- **Validation Accuracy**: 52.18%
+- **Model Size**: 49.1 MB (electronics_best_model.pth)
+
+### Supported Component Categories
+Bypass-capacitor, Ceramic-capacitor, Diode, Electrolytic-capacitor, Film-capacitor, IC-EEPROM, Inductor, Integrated-micro-circuit, LCD-1602, LCD-2004, LCD-Nokia-5110, LED, Op-amp, PNP-transistor, Photoresistor, Piezo, Potentiometer, Push-buttons, Terminal, TO-220, USB-micro, USB-mini, Voltage-regulator-78xx, Voltage-regulator-79xx, barrel-jack, capacitor, micro-SD, micro-switch, passive-buzzer, relay, resistor, transistor, transformer, trimmer, trim-pot, varistor
 
 ## 📁 Project Structure
 
 ```
-LegacyParts-AI/
-├── index.html                      # Homepage with value proposition
-├── identify.html                   # AI part identification interface
-├── marketplace.html                # Parts catalog with filters
-├── pricing.html                    # Subscription plans & pricing
-├── vendors.html                    # Vendor onboarding page
+current-nai/
+├── index.html                      # Homepage with hero section
+├── identify.html                   # AI component identification page
+├── marketplace.html                # Product marketplace with search
+├── pricing.html                    # Pricing plans page
+├── vendors.html                    # Vendor information page
+├── api_server.py                   # FastAPI backend server
+├── database.py                     # SQLAlchemy models & seed data
+├── requirements.txt                # Python dependencies
+├── Procfile                        # Render deployment config
+├── runtime.txt                     # Python version specification
 ├── README.md                       # This file
-├── DATASET_INTEGRATION.md          # Complete AI implementation guide
-├── requirements.txt                # Python backend dependencies
-├── .env.example                    # Environment configuration template
+├── DEPLOYMENT.md                   # Deployment instructions
+├── models/
+│   └── electronics_best_model.pth  # Trained AI model (49.1 MB)
 ├── css/
-│   ├── styles.css                  # Global styles & components
+│   ├── styles.css                  # Global styles with dark theme
 │   ├── identify.css                # Identification page styles
-│   ├── marketplace.css             # Marketplace page styles
+│   ├── marketplace.css             # Marketplace styles
 │   ├── pricing.css                 # Pricing page styles
 │   └── vendors.css                 # Vendors page styles
-└── js/
-    ├── main.js                     # Global JavaScript
-    ├── identify.js                 # Part identification logic
-    ├── marketplace.js              # Marketplace filtering & search
-    ├── pricing.js                  # Pricing page & chart rendering
-    └── vendors.js                  # Vendor page interactions
+├── js/
+│   ├── main.js                     # Global JavaScript & navigation
+│   ├── identify.js                 # AI identification interface
+│   ├── marketplace.js              # Marketplace search & filters
+│   ├── pricing.js                  # Pricing page interactions
+│   └── vendors.js                  # Vendor page logic
+└── images/
+    ├── hero-background.png         # Homepage background image
+    └── marketplace-background.png  # Marketplace background image
 ```
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- A modern web browser (Chrome, Firefox, Safari, Edge)
-- No build tools or dependencies required - pure HTML/CSS/JavaScript
+- Python 3.10.0
+- pip (Python package manager)
+- Modern web browser (Chrome, Firefox, Safari, Edge)
 
 ### Installation
 
-1. **Clone or download the project files**
+1. **Clone the repository**
    ```bash
-   cd "f:\New folder"
+   git clone https://github.com/fuadnafiu/Building-an-AI-Powered-Marketplace-for-Electrical-Components.git
+   cd Building-an-AI-Powered-Marketplace-for-Electrical-Components
    ```
 
-2. **Open in a web browser**
-   - Simply double-click `index.html` to open in your default browser
-   - Or use a local server for best experience:
-     ```bash
-     # Python 3
-     python -m http.server 8000
-     
-     # Python 2
-     python -m SimpleHTTPServer 8000
-     
-     # Node.js (with npx)
-     npx http-server
-     ```
+2. **Install Python dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-3. **Access the website**
-   - If using a local server: http://localhost:8000
-   - Direct file: Open index.html in your browser
+3. **Initialize the database** (creates marketplace.db with sample products)
+   ```bash
+   python database.py
+   ```
+
+4. **Start the FastAPI server**
+   ```bash
+   python api_server.py
+   ```
+   Or using uvicorn:
+   ```bash
+   uvicorn api_server:app --host 0.0.0.0 --port 8000
+   ```
+
+5. **Access the website**
+   - Local: http://localhost:8000
+   - Network: http://192.168.0.XXX:8000 (replace XXX with your local IP)
+
+## 🔌 API Endpoints
+
+### Component Identification
+```
+POST /api/identify-part
+Content-Type: multipart/form-data
+Body: { "file": <image_file> }
+Response: { "category": "LED", "confidence": 0.89, "all_predictions": [...] }
+```
+
+### Marketplace APIs
+```
+GET /api/products              # Get all products with optional filters
+GET /api/products/{id}         # Get specific product details
+GET /api/categories            # Get all product categories
+```
+
+### Query Parameters for /api/products
+- `category`: Filter by component category
+- `min_price`: Minimum price filter
+- `max_price`: Maximum price filter
+- `search`: Search in name, description, category, manufacturer
 
 ## 📄 Pages Overview
 
-### 1. Homepage (index.html)
-- Hero section with value proposition
-- Pain points section
-- How it works (3-step process)
-- Key features showcase
-- Social proof & testimonials
-- CTA sections
+### 1. Homepage ([index.html](index.html))
+- Dark electrified hero section with neon accents
+- Project introduction and value proposition
+- Feature highlights with microchip icons
+- Call-to-action buttons
 
-### 2. AI Identification (identify.html)
-- Photo/manual upload interface
-- Drag & drop functionality
-- Part description form
-- Results display with:
-  - AI confidence score
-  - Part details & specifications
-  - Available vendors
-  - Predictive pricing insights
-  - Price alerts
+### 2. AI Identification ([identify.html](identify.html))
+- Drag & drop image upload interface
+- Real-time AI component identification
+- Confidence scores and top-5 predictions
+- Results display with category information
 
-### 3. Marketplace (marketplace.html)
-- Advanced search functionality
-- Comprehensive filters:
-  - Category
-  - Manufacturer
-  - Condition
-  - Price range
-  - Availability
-  - Vendor rating
-- Grid/list view toggle
-- Sorting options
-- Part cards with:
-  - Images
-  - Pricing
-  - Vendor info
-  - Stock status
-  - Price trends
+### 3. Marketplace ([marketplace.html](marketplace.html))
+- 41 real products from SQLite database
+- Live search functionality (name, description, category, manufacturer)
+- Category filters with checkboxes
+- Product cards with images, pricing, ratings
+- Real manufacturers: Murata, Nichicon, Texas Instruments, Microchip, etc.
+- Grid/list view options
+- Bangladesh Taka (৳) pricing
 
-### 4. Pricing (pricing.html)
+### 4. Pricing ([pricing.html](pricing.html))
 - Three subscription tiers (Free, Pro, Enterprise)
-- Monthly/annual billing toggle
-- Feature comparison table
-- Predictive pricing feature spotlight with interactive chart
-- FAQ section
+- Feature comparison
+- Bangladesh-focused pricing
 
-### 5. Vendors (vendors.html)
-- Vendor value proposition
-- Benefits of selling on platform
-- 3-step onboarding process
-- Success stories with metrics
-- Vendor pricing plans
-- Feature showcase
-
+### 5. Vendors ([vendors.html](vendors.html))
+- Vendor information and benefits
+- Bangladesh vendor showcase
+- 5 verified vendors with ratings
 ## 🎨 Design System
 
 ### Color Palette
-- Primary Blue: `#2563eb`
-- Secondary Green: `#10b981`
-- Accent Orange: `#f59e0b`
-- Dark Background: `#0f172a`
-- Light Background: `#f8fafc`
+- Background: `#0a0a0a` (Pure black)
+- Secondary Background: `#1a1a1a`
+- Primary Cyan: `#00d4ff` (Neon accents)
+- Purple: `#a855f7` (Secondary accents)
+- Pink: `#ec4899` (Tertiary accents)
+- Text: `#ffffff`, `#e5e5e5`, `#9ca3af`
 
 ### Typography
-- Font Family: Inter, System Fonts
-- Headings: 800 weight
+- Font Family: Inter, system-ui, sans-serif
+- Headings: 700-900 weight
 - Body: 400 weight
-- UI Elements: 600 weight
+- UI Elements: 500-600 weight
 
-### Components
-- Buttons: Primary, Secondary, Large variants
-- Cards: Shadow-based elevation
-- Forms: Consistent input styling
-- Navigation: Sticky navbar with mobile menu
+### Theme
+- **Dark Mode**: Pure black backgrounds with neon accents
+- **Electrified Style**: Cyan/purple/pink neon glows
+- **Microchip Icons**: Circuit-themed iconography
+- **Gradient Effects**: Multi-color gradients on headings
 
-## 🔧 Technical Implementation
+## 🛠️ Technology Stack
 
-### AI Implementation with SIP-17 Dataset
+### Frontend
+- HTML5 with semantic elements
+- CSS3 (Grid, Flexbox, animations)
+- Vanilla JavaScript (ES6+)
+- Font Awesome icons
+- Responsive design (mobile-first)
 
-**Dataset:** [Synthetic Industrial Parts Dataset (SIP-17)](https://www.kaggle.com/datasets/mandymm/synthetic-industrial-parts-dataset-sip-17/data)
+### Backend
+- **Framework**: FastAPI 0.104.1
+- **Server**: Uvicorn 0.24.0
+- **Database**: SQLite with SQLAlchemy 2.0.23
+- **AI/ML**: PyTorch 2.1.0, torchvision 0.16.0
+- **Image Processing**: Pillow 10.1.0
 
-The project uses the SIP-17 dataset from Kaggle, which includes:
-- **33,000 synthetic training images** for 17 industrial part categories
-- **566 real-world test images** from actual industrial scenarios
-- **Benchmarked models**: ResNet, EfficientNet, ConvNext, ViT, DINO
-- **Expected accuracy**: 75-90% on real-world images
+### AI Model
+- **Architecture**: EfficientNet-B0
+- **Framework**: PyTorch
+- **Training**: Custom training pipeline
+- **Inference**: Real-time prediction API
 
-Currently simulated in frontend. For production deployment:
-1. Download SIP-17 dataset from Kaggle
-2. Train model using provided architecture (see `DATASET_INTEGRATION.md`)
-3. Deploy FastAPI backend with model inference
-4. Connect frontend to API endpoints
+## 🗄️ Database Schema
 
-**Implementation Guide:** See [DATASET_INTEGRATION.md](DATASET_INTEGRATION.md) for complete setup
+### Products Table
+- id, name, description, category, price (৳)
+- stock_quantity, image_url, manufacturer
+- vendor_id (foreign key), ratings, created_at
 
-### Predictive Pricing
-- Chart.js library for price history visualization
-- Sample data demonstrates seasonal pricing trends
-- Production would integrate with real market data
+### Vendors Table
+- id, name, description, location (Bangladesh)
+- rating, contact_email, phone, website
+- verified, created_at
 
-### Responsive Design
-- Mobile-first approach
-- Breakpoints at 640px, 768px, 968px
-- Collapsible mobile navigation
-- Flexible grid layouts
+### Sample Vendors
+1. **Techshop BD** - Dhaka (4.8★)
+2. **Ryans Computers** - Dhaka (4.7★)
+3. **Circuit Valley** - Chittagong (4.6★)
+4. **RoboMart BD** - Sylhet (4.9★)
+5. **DIY Electronics BD** - Dhaka (4.5★)
 
-## 🌟 Features to Implement in Production
+## ☁️ Deployment
 
-### Backend Requirements
-1. **User Authentication**
-   - Buyer & vendor login systems
-   - OAuth integration
-   - Role-based access control
+### Render Deployment (Recommended)
 
-2. **AI Integration**
-   - Computer vision API for part identification
-   - Image processing pipeline
-   - OCR for manual scanning
+1. **Sign up at [Render](https://render.com)**
+2. **Connect GitHub repository**
+3. **Configure Web Service:**
+   - Build Command: `pip install -r requirements.txt`
+   - Start Command: `uvicorn api_server:app --host 0.0.0.0 --port $PORT`
+   - Instance Type: Free
+4. **Deploy** (takes 5-10 minutes)
 
-3. **Database**
-   - Parts catalog with specifications
-   - Vendor profiles & inventory
-   - Historical pricing data
-   - User accounts & preferences
+### Railway Deployment (Alternative)
 
-4. **Payment Processing**
-   - Stripe/PayPal integration
-   - Subscription management
-   - Vendor payout system
+1. Sign up at [Railway](https://railway.app)
+2. New Project → Deploy from GitHub
+3. Select repository
+4. Railway auto-detects Python and uses Procfile
+5. Deploy automatically
 
-5. **Messaging System**
-   - Buyer-vendor communication
-   - Order notifications
-   - Price alert emails
+### Environment Variables (Optional)
+```
+PYTHON_VERSION=3.10.0
+PORT=8000
+```
 
-6. **Analytics**
-   - User behavior tracking
-   - Conversion metrics
-   - Vendor performance dashboard
+### Deployment Files Included
+- `Procfile`: Uvicorn start command
+- `runtime.txt`: Python 3.10.0 specification
+- `requirements.txt`: All dependencies
 
-### Advanced Features
-- Real-time inventory updates
-- API for enterprise customers
-- Mobile apps (iOS/Android)
-- Advanced search with NLP
-- Machine learning for better part matching
-- Automated pricing recommendations for vendors
+See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed instructions.
+
+## 🌟 Future Enhancements
+
+### Planned Features
+- User authentication & accounts
+- Shopping cart & checkout
+- Order tracking system
+- Vendor dashboard
+- Payment gateway integration (bKash, Nagad, card payments)
+- Email notifications
+- Product reviews & ratings
+- Advanced AI features (component defect detection)
+- Mobile application (Android/iOS)
+- Multi-language support (Bengali, English)
+
+### AI Model Improvements
+- Increase training dataset size
+- Fine-tune for higher accuracy
+- Add more component categories
+- Implement object detection (multiple components in one image)
+- Component specifications extraction
 
 ## 📱 Browser Support
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
+- ✅ Chrome (latest)
+- ✅ Firefox (latest)
+- ✅ Safari (latest)
+- ✅ Edge (latest)
+- ✅ Mobile browsers (iOS Safari, Chrome Mobile)
 
 ## 🎯 Target Audience
 
-### Buyers
-- Manufacturing plant managers
-- Maintenance engineers
-- Equipment technicians
-- Procurement specialists
+- **Electronics Hobbyists**: DIY project builders
+- **Students**: Engineering and robotics students
+- **Professionals**: Electronics engineers and technicians
+- **Makers**: Arduino, Raspberry Pi, IoT enthusiasts
+- **Repair Technicians**: Device repair professionals
+- **Educators**: Electronics instructors and trainers
 
-### Vendors
-- Industrial parts suppliers
-- Equipment refurbishers
-- OEM parts distributors
-- 3D printing services
+## 📊 Project Statistics
 
-## 💼 Business Model
-
-### Revenue Streams
-1. **Vendor Fees**
-   - Listing fees: $3-5/part/month
-   - Transaction fees: 6-8% per sale
-   - Featured placement options
-
-2. **Subscriptions**
-   - Pro: $49/month (buyers)
-   - Enterprise: Custom pricing
-   - API access fees
-
-3. **Additional Services**
-   - Priority sourcing service
-   - Vendor advertising
-   - White-label solutions
-
-## 📊 Success Metrics (Hypothetical)
-
-- 10,000+ monthly active buyers
-- 500+ verified vendors
-- 50,000+ parts listed
-- $2.4M monthly GMV
-- 94% AI identification accuracy
-- Average $2,400/year savings for Pro users
-
-## 🔐 Security Considerations
-
-For production deployment:
-- HTTPS encryption
-- Secure payment processing (PCI compliance)
-- Data encryption at rest
-- Regular security audits
-- GDPR compliance for EU users
-- Vendor verification process
-
-## 🚀 Deployment
-
-### Quick Deploy Options
-1. **GitHub Pages**: Free static hosting
-2. **Netlify**: Automatic deployments from Git
-3. **Vercel**: Optimized for modern web apps
-4. **AWS S3 + CloudFront**: Scalable CDN hosting
-
-### Production Deployment
-- Add backend API (Node.js, Python, etc.)
-- Database (PostgreSQL, MongoDB)
-- Cloud hosting (AWS, Google Cloud, Azure)
-- CDN for assets
-- Monitoring & logging
+- **AI Model**: 36 categories, 52.18% accuracy
+- **Dataset**: 10,990 training images
+- **Products**: 41 real components in marketplace
+- **Vendors**: 5 verified Bangladesh vendors
+- **Codebase**: 36 files, 232 MB deployed
+- **Technologies**: FastAPI, PyTorch, SQLite, Vanilla JS
 
 ## 📞 Contact & Support
 
-This is a demonstration project showcasing the concept of an AI-powered aftermarket parts marketplace.
+**Project Repository**: [GitHub](https://github.com/fuadnafiu/Building-an-AI-Powered-Marketplace-for-Electrical-Components)
 
-For implementation or questions about the concept:
-- Review the code structure
-- Check inline comments for functionality explanations
-- Examine the mobile responsiveness approach
+For questions, issues, or contributions:
+- Open an issue on GitHub
+- Submit a pull request
+- Check documentation files
 
 ## 📜 License
 
-This project is provided as-is for demonstration purposes.
+This project is provided as-is for educational and demonstration purposes.
+
+## 🙏 Acknowledgments
+
+- PyTorch team for the excellent deep learning framework
+- EfficientNet authors for the model architecture
+- Bangladesh electronics community
+- All verified vendors and manufacturers
 
 ## 🎓 Learning Resources
 
-Technologies used in this project:
-- HTML5 semantic elements
-- CSS3 Grid & Flexbox
-- Vanilla JavaScript (ES6+)
-- Chart.js for data visualization
-- Font Awesome icons
-- Responsive design principles
+### Technologies Used
+- **Backend**: FastAPI, Uvicorn, SQLAlchemy
+- **AI/ML**: PyTorch, torchvision, EfficientNet
+- **Frontend**: HTML5, CSS3, Vanilla JavaScript
+- **Database**: SQLite
+- **Deployment**: Render, Railway
+- **Version Control**: Git, GitHub
+
+### Key Concepts Demonstrated
+- Deep learning image classification
+- REST API development with FastAPI
+- Database design with SQLAlchemy ORM
+- Responsive web design
+- Real-time search and filtering
+- Modern dark UI/UX design
 
 ---
 
-**Built with ❤️ for the manufacturing industry**
+**Built with ❤️ for the electronics community in Bangladesh**
 
-*Helping factories keep their legacy equipment running with modern AI technology*
+*Empowering makers, students, and professionals with AI-powered component identification*
