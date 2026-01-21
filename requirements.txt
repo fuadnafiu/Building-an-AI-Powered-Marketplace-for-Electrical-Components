@@ -13,8 +13,8 @@ onnx==1.15.0
 onnx-tf==1.10.0
 
 # Image Processing
-Pillow==10.1.0
-opencv-python==4.8.1.78
+Pillow>=10.1.0
+opencv-python>=4.8.0
 
 # API & Data Handling
 pydantic==2.5.0
