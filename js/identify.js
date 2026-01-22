@@ -117,7 +117,7 @@ async function analyzeImage() {
         formData.append('file', window.currentFile);
         
         // Call backend API
-        const apiResponse = await fetch('http://localhost:8000/api/identify-part', {
+        const apiResponse = await fetch('/api/identify-part', {
             method: 'POST',
             body: formData
         });
@@ -161,9 +161,8 @@ async function analyzeImage() {
         // Show detailed error for debugging
         showError(`⚠️ Error: ${error.message}<br><br>
             <strong>Debug Info:</strong><br>
-            Server is running on http://localhost:8000<br>
             Check browser console (F12) for details<br><br>
-            <small>If you see "Failed to fetch" - check CORS or network</small>
+            <small>If error persists, try refreshing the page</small>
         `);
     }
 }
